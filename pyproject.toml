@@ -1,0 +1,21 @@
+[project]
+name = "vocab-wizard"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sidra1314", email = "sidrakhalid1314@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.0.14",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+vocab-wizard = "vocab_wizard:main"
+run-agent = "vocab_wizard.vocab_wizard:vocab_wizard_agent"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
